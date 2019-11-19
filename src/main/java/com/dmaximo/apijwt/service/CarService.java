@@ -26,7 +26,10 @@ public class CarService {
 		Car savedCar = carRepository.save(car);
 
 		return savedCar;
-
+	}
+	
+	public Car findById() {
+		
 	}
 
 }
