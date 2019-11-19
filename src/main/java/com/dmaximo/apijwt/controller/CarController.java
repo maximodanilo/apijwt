@@ -34,7 +34,7 @@ public class CarController {
 	
 	@GetMapping("/cars/{model}")
 	public Car getCar(@PathVariable Integer carId) {
-		Car car = carService.
+		Car car = carService.findById(carId);
 		
 		return car;
 	}

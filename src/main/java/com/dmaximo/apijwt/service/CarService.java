@@ -28,8 +28,10 @@ public class CarService {
 		return savedCar;
 	}
 	
-	public Car findById() {
-		
+	public Car findById(Integer id) {
+		Car savedCar = carRepository.findOne(id);
+
+		return savedCar;
 	}
 
 }
